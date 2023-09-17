@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+char OperationsBinaryStirng(string str){
+  
+  int n = str.length();
+  char result = str[0];
+  
+  for(int i = 0; i < n - 1; i++){
+  
+    char a = str[i];
+    char b = str[i+1];
+
+    if(a == 'A'){
+      result = result & b;
+    }
+
+    else if(a == 'B'){
+      result = result | b;
+    }
+
+    else if(a == 'C'){
+      result = result ^ b;
+    }
+    
+  }
+
+  if (result == '\0'){
+    return -1;
+  }
+
+  return result;
+}
+
+int main() {
+
+  string str;
+  cout<<"Enter a Binary string ";
+  getline(cin, str);
+  
+  
+ 
+
+  cout << "Logical Output is :: " << OperationsBinaryStirng(str);
+  
+  return 0;
+}
+
+
+def is_almost_lucky(number);
+luck_digits ={'4', '7'};
+
+def is_luck_digit(digit):
+return digit in lucky_digits
+def is_luck_number(num):
+return all(is_lucky_digit(digit) for digit in str(num))
+for i in range(1,number+1):
+  if number%i==0 and is_lucky_number(i);
+return true;
+return false
+
+  #driver
+  N=int(input())
+  if is_almost_lucky(N):
+print("Almost")
+else:
+print("Not almost")
