@@ -1,0 +1,127 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+//Count No of words ++++++++++++++++++++++++++++++++++
+//====================================================
+// int checkwords(string& s){
+
+//   int n = s.size();
+
+//   int count = 1;
+//   for(int i = 0; i < n; i++){
+//     if(s[i] == 32){
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+
+
+
+
+
+
+
+
+
+
+//Find Number of UpprCase and Lower Case===============
+//===================================================
+
+// int count(string& s, int& capcount, int& lowcount, int& n){
+//   n = s.size();
+//    capcount = 0;
+//    lowcount = 0;
+
+//   for(int i = 0; i < n; i++){
+//     if(s[i] >= 'A' && s[i] <= 'Z'){
+//       capcount++;
+      
+//     }
+//     else {
+//       lowcount++;
+//     }
+//   }
+//   return capcount;
+// }
+
+//Find Number of words and space in the para =====================
+//================================================================
+
+// struct space{
+
+//   int count;
+//   int withoutspace;
+// };
+
+// space exceptspace(string& s){
+//   int n = s.size();
+//   int count = 0;
+//   for(int i = 0; i < n; i++){
+//     if(s[i] == 32){
+//       count++;
+//     }
+//   }
+
+//   space r;
+//   r.count = count;
+//   r.withoutspace = n - count;
+//   return r;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+
+  //Find Number of UpprCase and Lower Case===============
+//===================================================
+  // string s;
+  // cout<<"Enter the String :: \n";
+  // getline(cin, s);
+  // int capcount, lowcount, n;
+
+  //  count(s, capcount, lowcount, n);
+
+  // cout<<"Uppercase :: "<<capcount<<endl;
+  // cout <<"LowerCase :: "<<lowcount<<endl;
+  // cout<<"Length of String is ::"<<n<<endl;
+
+
+  // string s;
+  // cout<<"Enter the String :: \n";
+  // getline(cin, s);
+
+
+  //Find Number of words and space in the para =====================
+//================================================================
+
+  // // cout<<"count is :: "<<count<<endl;
+
+  //  space r = exceptspace(s);
+
+  //   cout <<"Word Space is :: " << r.count << endl;
+  //   cout <<"wordlength is without space :: " << r.withoutspace <<endl;
+
+  
+
+  
+  return 0;
+}
