@@ -1,0 +1,54 @@
+#include<iostream>
+using namespace std;
+
+class Hero {
+
+    // public:
+
+    int data;
+    char name;
+
+    public:
+  
+
+
+    int getter(int d){
+      data = d;
+      return data;
+    }
+
+    char character(int c){
+      name = c;
+      return name;
+    }
+
+    Hero() {
+    cout<<"called successfully ";
+        
+    }
+     Hero(int data) {
+    
+            cout<<this;
+       // this -> data = data;
+        }
+  
+
+
+
+
+};
+
+
+int main(){
+
+  Hero obj(150);
+
+  // obj.getter();
+  // obj.getter = 50;
+  // obj.name = 'M';
+
+  // cout<<obj.getter(100)<<"\n"<<obj.character(93)<<endl;
+  // cout<<sizeof(obj);
+
+  return 0;
+}
