@@ -1,0 +1,96 @@
+#include <iostream>
+using namespace std;
+
+// int getSumarray(int* arr, int n){
+//    int sum = 0;
+//   for(int i = 0; i < n; i++){
+
+
+//     sum = sum + arr[i];
+
+    
+//   }
+//   return sum;
+// }
+
+int main() {
+
+/* int a = 5;
+  cout<<a<<endl;
+  cout<<&a<<endl;
+
+  // int* ptr1 = &a;
+
+  int* ptr = &a;
+  cout<<ptr<<endl;
+  cout<<&ptr<<endl;
+  cout<<*ptr<<endl;
+
+//pointer to pointer
+  int** rtp = &ptr;
+
+  cout<<rtp<<endl; //A
+  cout<<&rtp<<endl; //A
+  cout<<*rtp<<endl; //A
+  cout<<**rtp<<endl; //V
+
+    int*** rtp1 = &rtp;
+  cout<<endl;
+
+  cout<<rtp1<<endl; //A
+  cout<<&rtp1<<endl; //A
+  cout<<*rtp1<<endl; //A
+  cout<<**rtp1<<endl; //V
+  cout<<***rtp1<<endl;
+
+  */
+
+
+
+  // int first  = 8;
+  // int second = 18;
+  // int *ptr = &second;
+  // *ptr = 9;
+  // cout<<first<<" "<<second<<endl;
+  // cout<<*ptr<<endl;
+
+
+  int first  = 6;
+  int *p = &first;
+  int *q = p;
+  (*q)++;
+
+  cout<< first << endl;
+
+
+
+
+
+
+  
+
+  // int n;
+  // cin>>n;
+
+  // int *arr = new int[n]; 
+
+  // for(int i = 0; i < n; i++){
+
+  //   cin >> arr[i];
+  // }
+
+  // int ans = getSumarray(arr, n);
+
+  // cout<<"The Sum of all array element is :: "<<ans<<endl;
+
+
+  // while (true){
+
+  //   double *p = new double;
+  // }
+
+
+  
+  
+  return 0;
+}
