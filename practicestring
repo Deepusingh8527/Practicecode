@@ -1,0 +1,171 @@
+#include <iostream>
+using namespace std;
+
+
+// void changeupper(char a[], int n) {
+//     for (int i = 0; a[i] != '\0'; i++) {
+//         if (a[i] >= 'a' && a[i] <= 'z') {
+//             a[i] = a[i] + ('A' - 'a');
+//         }
+        
+//         if (a[i] >= n) {
+//             break; 
+//         }
+//     }
+// }
+
+// void changeupper(char str[]) {
+//     for (int i = 0; str[i] != '\0'; i++) {
+//         if (str[i] >= 'a' && str[i] <= 'z') {
+//             str[i] = str[i] - 'a' + 'A';
+//         }
+//     }
+// }
+
+// void changelower(char str[]) {
+//     for (int i = 0; str[i] != '\0'; i++) {
+//         if (str[i] >= 'A' && str[i] <= 'Z') {
+//             str[i] = str[i] - 'A' + 'a';
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main()
+{
+    string str = "my name is deepu and i am 20 year old and may I know about you little bit";
+    string temp = "";
+    // for(int i = 0; i < str.length(); i++){
+    //   if(str[i] >= 'a' && str[i] <= 'z'){
+    //     str[i] = str[i] - 'a' + 'A';
+    //     temp.push_back(str[i]);
+    //   }
+    // }
+
+int count = 1;
+
+  for(int i = 0; i <str.length(); i++){
+    if(str[i] == ' ' || str[i] == '\0'){
+      count++;
+    }
+    else if(str[i] == ' '){
+      if(str[i] >= 'a' && str[i] <= 'z'){
+        str[i] = str[i] - 'a' + 'A';
+        
+      }
+    }
+  }
+  
+cout<<count<<endl;
+
+  cout<<str;
+
+  int arr[26] = {0};
+
+  for(int i = 0; i < str.length(); i++){
+    char ch = str[i];
+
+    int number = 0;
+
+    number = ch - 'a';
+    cout<<number;
+  }
+
+    // cout<<temp;
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  // char name[20] = "DeePu siNgh";
+  // int n = sizeof(name)/sizeof(name[0]);
+
+  
+  // cout<<name[2];
+  // changeupper(name);
+
+  // cout<<name;
+
+  //   changeupper(name);
+  // cout<<name<<endl;
+  // changelower(name);
+
+  // cout<<name;
+
+
+
+  return 0;
+}
