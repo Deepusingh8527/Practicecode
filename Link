@@ -1,0 +1,120 @@
+#include<iostream>
+using namespace std;
+
+class Node{
+
+  public:
+  int data;
+  Node* next;
+
+  Node(int data){
+    this -> data = data;
+    this -> next = NULL;
+  }
+};
+
+void insertNode(Node* &head, int data){
+  Node* temp = new Node(data);
+
+  temp -> next = head;
+  head = temp;
+}
+
+void printNode(Node* &head){
+  Node* node1 = head;
+
+  while(node1 != NULL){
+    cout << node1 -> data << " ";
+    node1 = node1 -> next;
+  }
+  cout << endl;
+}
+
+void insertTailNode(Node* &tail, int data){
+  Node* temp = new Node(data);
+  
+  tail -> next = temp;
+  tail = tail -> next;
+}
+
+
+
+void insertAtposition(Node* &tail, Node* &head, int position, int d){
+
+  if(position == 1){
+    insertNode(head, d);
+    return;
+    
+  }
+  
+  Node* temp = head;
+  int count = 1;
+
+
+
+  while(count < position - 1){
+    temp = temp -> next;
+    count++;
+    
+  }
+
+   if(temp -> next == NULL){
+   insertTailNode(tail, d);
+   return;
+ }
+
+  Node* InsertNode = new Node(d);
+  InsertNode -> next = temp -> next;
+  temp -> next = InsertNode;
+}
+
+void deleteNode(Node* &head, int position){
+  Node* &temp = head;
+  
+}
+
+
+
+
+
+int main(){
+Node* node2 = new Node(10);
+  // cout << node2 -> data <<" ";
+  // cout << node2 -> next;
+
+  Node* head = node2;
+
+  Node* tail = node2;
+  printNode(head);
+
+
+
+  // insertNode(head, 15);
+
+  // printNode(head);
+
+  // insertNode(head, 20);
+  // printNode(head);
+
+  // insertNode(head, 25);
+  // printNode(head);
+
+  insertTailNode(tail, 15);
+
+  printNode(head);
+
+  insertTailNode(tail, 20);
+  printNode(head);
+
+  insertTailNode(tail, 25);
+  printNode(head);
+
+  insertAtposition(tail, head, 5, 90);
+  printNode(head);
+
+  cout<< "Head " << head -> data <<"\n";
+  cout<< "Tail " << tail -> data;
+  
+
+  return 0;
+}
